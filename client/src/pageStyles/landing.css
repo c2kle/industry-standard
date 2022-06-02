@@ -1,0 +1,23 @@
+.landingContainer {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.landingBody {
+    grid-column: 2/3; 
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

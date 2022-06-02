@@ -1,0 +1,25 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.listText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    margin: 10px;
+    text-align: left;
+    font-family: 'Be Vietnam Pro';
+    font-size: small;
+}
+
+.listButton {
+    margin:20px;
+}

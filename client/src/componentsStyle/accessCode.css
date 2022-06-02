@@ -1,0 +1,61 @@
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjust-box {
+    width:275px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    box-sizing: content-box;
+}
+
+button {
+    margin:0px 0px 0px 0px;
+    background-color: black;
+    border: none;
+    color: rgb(118,118,118);
+    font-size:small;
+    letter-spacing: 1.4px;
+    font-family: 'Arial', sans-serif;
+    padding: 0px;
+    border: 0px;
+    box-sizing: content-box;
+}
+
+button:hover {
+    color:whitesmoke;
+}
+
+input {
+    height: 30px;
+    width: 275px;
+    border-style: none none solid none;
+    border-color: rgb(118,118,118);
+    border-width: 0px 0px .5px 0px;
+    border-radius: 0px;
+    background-color: black;
+    margin-bottom: 10px;
+    color:rgb(118,118,118);
+    text-align: center;
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: medium;
+    letter-spacing: 1.4px;
+    text-transform:uppercase;
+    outline: none;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+input:focus {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+input:hover {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
