@@ -1,8 +1,10 @@
 .eventContainer {
     display: grid;
     background-color: black;
-    grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 10vh 80vh 10vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 header {
@@ -34,14 +36,3 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
 } 
-
-@media screen and (max-height: 650px) {
-
-    .eventContainer {
-        min-height: 100vh;
-        min-width: 100vw;
-        grid-template-columns: 10vw auto 10vw;
-        grid-template-rows: 10vw auto 10vw;
-    }
-
-}
