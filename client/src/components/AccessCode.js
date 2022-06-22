@@ -10,7 +10,7 @@ export default function AccessCode() {
 
     event.preventDefault();
 
-    if (event.target[0].value.toUpperCase() === 'SILKROAD' || event.target[0].value.toUpperCase() === 'STILLLIFE') {
+    if (event.target[0].value.toUpperCase() === 'SILKROAD') {
       navigate('/silkroad')
     }
 
