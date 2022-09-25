@@ -7,5 +7,13 @@ exports.Event = new graphql_1.GraphQLObjectType({
     fields: () => ({
         id: { type: graphql_1.GraphQLID },
         code: { type: graphql_1.GraphQLString },
+        title: { type: graphql_1.GraphQLString },
+        label_1: { type: graphql_1.GraphQLString },
+        label_2: { type: graphql_1.GraphQLString },
+        label_3: { type: graphql_1.GraphQLString },
+        label_4: { type: graphql_1.GraphQLString },
+        label_5: { type: graphql_1.GraphQLString },
+        label_6: { type: graphql_1.GraphQLString },
+        label_7: { type: graphql_1.GraphQLString },
     }),
 });

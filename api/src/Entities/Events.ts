@@ -9,6 +9,30 @@ export class Events extends BaseEntity {
 
     @Column()
     code!: string;
+
+    @Column()
+    title!: string;
+
+    @Column()
+    label_1!: string;
+
+    @Column()
+    label_2!: string;
+
+    @Column()
+    label_3!: string;
+
+    @Column()
+    label_4!: string;
+
+    @Column()
+    label_5!: string;
+
+    @Column()
+    label_6!: string;
+
+    @Column()
+    label_7!: string;
     
     @CreateDateColumn()
     date!: Date
