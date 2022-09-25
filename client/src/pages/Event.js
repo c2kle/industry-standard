@@ -4,7 +4,7 @@ import '../pageStyles/event.css'
 import EventBody from '../components/EventBody'
 import EventTitle from '../components/EventTitle'
 
-export default function Event() {
+export default function Event(props) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,14 +13,14 @@ export default function Event() {
   return (
     <div className='eventContainer'>
       <header>
-        <EventTitle/>
+        <EventTitle title={props.title} />
       </header>
       <div className="eventBody">
         <EventBody/>
       </div>
-      <footer>
+      {/* <footer>
         <HomeFooter/>
-      </footer>
+      </footer> */}
     </div>
   )
 }

@@ -4,6 +4,7 @@ import { schema } from "./Schema";
 import cors from "cors";
 import { DataSource } from "typeorm";
 import { Guests } from "./Entities/Guests";
+import { Events } from "./Entities/Events";
 import * as dotenv from 'dotenv'
 
 const main = async () => {
@@ -19,7 +20,7 @@ const main = async () => {
         password: process.env.DB_PASSWORD,
         logging: true,
         synchronize: false,
-        entities: [Guests],
+        entities: [Guests, Events],
     });
 
     const connection = await dataSource.initialize()

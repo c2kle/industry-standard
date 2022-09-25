@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
+import React, {useEffect,useState} from 'react'
 import '../pageStyles/landing.css'
 import AccessCode from '../components/AccessCode'
 import CopyrightFooter from '../components/CopyrightFooter'
+import Event from './Event'
 
 export default function Landing() {
 
@@ -9,10 +10,17 @@ export default function Landing() {
     window.scrollTo(0,0);
 },[]);
 
+  const [args,setArgs] = useState({display: true, title: ""});
+
+const bigQuestion = (args) => {
+  setArgs(args)
+}
+
+  console.log(args.display);
   return (
     <div className='landingContainer'>  
       <div className="landingBody">
-        <AccessCode/>
+        {args.display === true ? <AccessCode questions={bigQuestion}/> : <Event title={args.title}/>}
       </div>
       <footer>
         <CopyrightFooter/>
