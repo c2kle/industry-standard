@@ -37,6 +37,7 @@ const Schema_1 = require("./Schema");
 const cors_1 = __importDefault(require("cors"));
 const typeorm_1 = require("typeorm");
 const Guests_1 = require("./Entities/Guests");
+const Events_1 = require("./Entities/Events");
 const dotenv = __importStar(require("dotenv"));
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     dotenv.config();
@@ -49,7 +50,7 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
         password: process.env.DB_PASSWORD,
         logging: true,
         synchronize: false,
-        entities: [Guests_1.Guests],
+        entities: [Guests_1.Guests, Events_1.Events],
     });
     const connection = yield dataSource.initialize()
         .then(() => {

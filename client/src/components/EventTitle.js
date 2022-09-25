@@ -1,9 +1,9 @@
 import React from 'react'
 import '../componentsStyle/eventTitle.css'
 
-export default function EventHeader() {
+export default function EventHeader(props) {
   return (
-    <h3>SILKROAD</h3>
+    <h3>{props.title}</h3>
   )
 }
 
