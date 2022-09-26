@@ -30,13 +30,7 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/silkroad" element={<Event />} />
-          <Route path="/silkroad-list" element={<List />} />
-        </Routes>
-      </Router>
+      <Landing />
     </ApolloProvider>
 
   );

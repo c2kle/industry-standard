@@ -28,7 +28,7 @@ export default function AccessCode(props) {
       let label_6 = results.getEvent.label_6;
       let label_7 = results.getEvent.label_7;
 
-      props.displayState({display: "Event", event: {
+      props.setDisplayState({display: "Event", event: {
         title: title,
         label_1: label_1,
         label_2: label_2,

@@ -13,10 +13,10 @@ export default function Event(props) {
   return (
     <div className='eventContainer'>
       <header>
-        <EventTitle title={props.eventDetails.title} />
+        <EventTitle title={props.displayDetails.event.title} />
       </header>
       <div className="eventBody">
-        <EventBody eventDetails={props.eventDetails}/>
+        <EventBody displayDetails={props.displayDetails} setDisplayState={props.setDisplayState}/>
       </div>
       {/* <footer>
         <HomeFooter/>

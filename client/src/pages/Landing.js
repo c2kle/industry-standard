@@ -3,6 +3,7 @@ import '../pageStyles/landing.css'
 import AccessCode from '../components/AccessCode'
 import CopyrightFooter from '../components/CopyrightFooter'
 import Event from './Event'
+import List from './List'
 
 export default function Landing() {
 
@@ -24,15 +25,11 @@ export default function Landing() {
     },
   });
 
-  const passDisplayState = (displayOptions) => {
-    setDisplayState(displayOptions)
-  }
-
   console.log(displayState);
   return (
     <div className='landingContainer'>
       <div className="landingBody">
-        {displayState.display === "Access Code" ? <AccessCode displayState={passDisplayState} /> : <Event eventDetails={displayState.event} />}
+        {displayState.display === "Access Code" ? <AccessCode setDisplayState={setDisplayState} /> : displayState.display === "Event" ? <Event displayDetails={displayState} setDisplayState={setDisplayState}/> : displayState.display === "Guest Registration" ? <List setDisplayState={setDisplayState}/> : <AccessCode setDisplayState={setDisplayState} />}
       </div>
       <footer>
         <CopyrightFooter />
