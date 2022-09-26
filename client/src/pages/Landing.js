@@ -25,7 +25,6 @@ export default function Landing() {
     },
   });
 
-  console.log(displayState);
   return (
     <div className='landingContainer'>
       <div className="landingBody">

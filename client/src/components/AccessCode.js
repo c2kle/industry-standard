@@ -4,18 +4,14 @@ import { useLazyQuery } from '@apollo/client';
 import { GET_EVENT } from '../GraphQL/Queries';
 import { useState } from 'react';
 
-// import { useNavigate } from "react-router-dom"
 
 export default function AccessCode(props) {
 
 
   let results;
-  // let navigate = useNavigate();
+
   const validateCode = (props) => {
     
-    // event.preventDefault();
-    
-    // await getEvent();
     if (results === undefined) {
     }
     else if (results.getEvent !== null) {
@@ -42,10 +38,6 @@ export default function AccessCode(props) {
     else {
       console.log(results.getEvent)
     }
-    // if (event.target[0].value.toUpperCase() === 'SILKROAD') {
-    //   props.display(false)
-    //   // navigate('/silkroad')
-    // }
 
   }
 
