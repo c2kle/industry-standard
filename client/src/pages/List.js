@@ -3,7 +3,7 @@ import "../pageStyles/list.css"
 import ListBody from '../components/ListBody';
 import EventFooter from '../components/EventFooter'
 
-export default function List() {
+export default function List(props) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,11 +12,11 @@ export default function List() {
   return (
     <div className="listContainer">
       <div className="listBody">
-        <ListBody/>
+        <ListBody setDisplayState={props.setDisplayState}/>
       </div>
-      <footer>
+      {/* <footer>
         <EventFooter/>
-      </footer>
+      </footer> */}
     </div>
   )
 }

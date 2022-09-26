@@ -4,18 +4,14 @@ import { useLazyQuery } from '@apollo/client';
 import { GET_EVENT } from '../GraphQL/Queries';
 import { useState } from 'react';
 
-// import { useNavigate } from "react-router-dom"
 
 export default function AccessCode(props) {
 
 
   let results;
-  // let navigate = useNavigate();
+
   const validateCode = (props) => {
     
-    // event.preventDefault();
-    
-    // await getEvent();
     if (results === undefined) {
     }
     else if (results.getEvent !== null) {
@@ -28,7 +24,7 @@ export default function AccessCode(props) {
       let label_6 = results.getEvent.label_6;
       let label_7 = results.getEvent.label_7;
 
-      props.displayState({display: "Event", event: {
+      props.setDisplayState({display: "Event", event: {
         title: title,
         label_1: label_1,
         label_2: label_2,
@@ -42,10 +38,6 @@ export default function AccessCode(props) {
     else {
       console.log(results.getEvent)
     }
-    // if (event.target[0].value.toUpperCase() === 'SILKROAD') {
-    //   props.display(false)
-    //   // navigate('/silkroad')
-    // }
 
   }
 
