@@ -14,8 +14,8 @@ export default function AccessCode(props) {
 
     props.setDisplayState({
       display: newDisplay, event: {
-        title: eventResults.label_1,
-        label_1: eventResults.title,
+        title: eventResults.title,
+        label_1: eventResults.label1,
         label_2: eventResults.label_2,
         label_3: eventResults.label_3,
         label_4: eventResults.label_4,
