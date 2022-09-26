@@ -26,9 +26,13 @@ export default function AccessCode(props) {
     })
   }
 
+  //Temporary code as we test features
   const validateCode = () => {
-
+    
     if (results === undefined) {
+    }
+    else if (results.getEvent === null) {
+
     }
     else if (results.getEvent.code === "CHANNEL") {
       let eventResults = results.getEvent;
