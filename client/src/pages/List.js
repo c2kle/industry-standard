@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "../pageStyles/list.css"
 import ListBody from '../components/ListBody';
-import EventFooter from '../components/EventFooter'
+import CreateBody from '../components/CreateBody';
 
 export default function List(props) {
 
@@ -9,14 +9,20 @@ export default function List(props) {
     window.scrollTo(0, 0);
   }, []);
 
+  let body;
+
+  if (props.displayState.display === "Guest Registration") {
+    body = <ListBody setDisplayState={props.setDisplayState}/>
+  }
+  else if (props.displayState.display === "Temporary Create" || props.displayState.display === "Temporary Channel") {
+    body = <CreateBody displayState={props.displayState}setDisplayState={props.setDisplayState}/>
+  }
+
   return (
     <div className="listContainer">
       <div className="listBody">
-        <ListBody setDisplayState={props.setDisplayState}/>
+        {body}
       </div>
-      {/* <footer>
-        <EventFooter/>
-      </footer> */}
     </div>
   )
 }
