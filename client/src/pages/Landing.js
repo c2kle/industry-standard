@@ -4,6 +4,7 @@ import AccessCode from '../components/AccessCode'
 import CopyrightFooter from '../components/CopyrightFooter'
 import Event from './Event'
 import List from './List'
+import HomeFooter from '../components/HomeFooter'
 
 export default function Landing() {
 
@@ -25,13 +26,29 @@ export default function Landing() {
     },
   });
 
+  let page;
+  let footer;
+
+  if (displayState.display === "Event") {
+    page = <Event displayState={displayState} setDisplayState={setDisplayState} />
+    footer = <HomeFooter displayState={displayState} setDisplayState={setDisplayState}/>
+  }
+  else if (displayState.display === "Guest Registration" || displayState.display === "Temporary Create" || displayState.display === "Temporary Channel") {
+    page = <List displayState={displayState} setDisplayState={setDisplayState} />
+    footer = <HomeFooter displayState={displayState} setDisplayState={setDisplayState} />
+  }
+  else {
+    page = <AccessCode setDisplayState={setDisplayState} />
+    footer = <CopyrightFooter />
+  }
+
   return (
     <div className='landingContainer'>
       <div className="landingBody">
-        {displayState.display === "Access Code" ? <AccessCode setDisplayState={setDisplayState} /> : displayState.display === "Event" ? <Event displayDetails={displayState} setDisplayState={setDisplayState}/> : displayState.display === "Guest Registration" ? <List setDisplayState={setDisplayState}/> : <AccessCode setDisplayState={setDisplayState} />}
+        {page}
       </div>
       <footer>
-        <CopyrightFooter />
+        {footer}
       </footer>
     </div>
   )

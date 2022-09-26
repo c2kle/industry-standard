@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import HomeFooter from '../components/HomeFooter'
 import '../pageStyles/event.css'
 import EventBody from '../components/EventBody'
 import EventTitle from '../components/EventTitle'
@@ -13,14 +12,11 @@ export default function Event(props) {
   return (
     <div className='eventContainer'>
       <header>
-        <EventTitle title={props.displayDetails.event.title} />
+        <EventTitle title={props.displayState.event.title} />
       </header>
       <div className="eventBody">
-        <EventBody displayDetails={props.displayDetails} setDisplayState={props.setDisplayState}/>
+        <EventBody displayState={props.displayState} setDisplayState={props.setDisplayState}/>
       </div>
-      {/* <footer>
-        <HomeFooter/>
-      </footer> */}
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { GraphQLObjectType, GraphQLSchema } from "graphql";
 import { GET_ALL_GUESTS } from "./Queries/Guests";
 import { CREATE_GUEST } from "./Mutations/Guests";
 import { GET_EVENT } from "./Queries/Events";
+import { CREATE_EVENT } from "./Mutations/Events";
 
 const RootQuery = new GraphQLObjectType({
     name: "RootQuery",
@@ -14,7 +15,8 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
     name: "Mutation",
     fields: {
-        createGuest: CREATE_GUEST
+        createGuest: CREATE_GUEST,
+        createEvent: CREATE_EVENT
     }
 })
 

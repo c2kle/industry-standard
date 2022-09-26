@@ -5,6 +5,7 @@ const graphql_1 = require("graphql");
 const Guests_1 = require("./Queries/Guests");
 const Guests_2 = require("./Mutations/Guests");
 const Events_1 = require("./Queries/Events");
+const Events_2 = require("./Mutations/Events");
 const RootQuery = new graphql_1.GraphQLObjectType({
     name: "RootQuery",
     fields: {
@@ -15,7 +16,8 @@ const RootQuery = new graphql_1.GraphQLObjectType({
 const Mutation = new graphql_1.GraphQLObjectType({
     name: "Mutation",
     fields: {
-        createGuest: Guests_2.CREATE_GUEST
+        createGuest: Guests_2.CREATE_GUEST,
+        createEvent: Events_2.CREATE_EVENT
     }
 });
 exports.schema = new graphql_1.GraphQLSchema({

@@ -6,6 +6,10 @@ span, a {
     text-decoration: none;
 }
 
+span:hover, a:hover {
+    color: whitesmoke
+}
+
 /* When screen gets smaller in terms of both width and height, the copyright text goes from 'small' to '12px' */
 @media screen and (max-width: 450px),
             screen and (max-height: 450px) {

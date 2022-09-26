@@ -1,7 +1,4 @@
 import Landing from './pages/Landing';
-import Event from './pages/Event';
-import List from './pages/List';
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from '@apollo/client'
 import { onError } from '@apollo/client/link/error';
 
