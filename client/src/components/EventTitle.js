@@ -3,7 +3,7 @@ import '../componentsStyle/eventTitle.css'
 
 export default function EventHeader(props) {
   return (
-    <h3>{props.title}</h3>
+    <h3 style={{marginBottom: 20}}>{props.title}</h3>
   )
 }
 

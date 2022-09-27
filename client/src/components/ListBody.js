@@ -30,6 +30,7 @@ export default function ListBody(props) {
     return (
         <div className="createGuest">
             <form>
+                <h3>SILKROAD</h3>
                 <input className="listText" type='text' placeholder='First Name'
                     onChange={(event) => { setFirstName(event.target.value) }}></input>
                 <input className="listText" type='text' placeholder='Last Name'
@@ -42,7 +43,9 @@ export default function ListBody(props) {
                     onChange={(event) => { setMobile(event.target.value) }}></input>
                 <input className="listText" type='text' placeholder='Promoter (If Applicable)'
                     onChange={(event) => { setPromoter(event.target.value) }}></input>
-                <div className="listButtonsContainer"><button className="listButton" type="button" onClick={onBackHandler}>BACK</button><button className="listButton" onClick={(event) => {
+                <div className="listButtonsContainer">
+                    {/* <button className="listButton" type="button" onClick={onBackHandler}>INFO</button> */}
+                    <button className="listButton" onClick={(event) => {
                     event.preventDefault(); createGuest({
                         variables:
                             { first_name: firstName, last_name: lastName, instagram: instagram, age: age, mobile: mobile, promoter: promoter }

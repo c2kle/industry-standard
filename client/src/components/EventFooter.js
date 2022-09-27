@@ -1,8 +1,15 @@
 import React from 'react'
 import '../componentsStyle/footerLink.css'
 
-export default function EventFooter() {
+export default function Copyright(props) {
+
+  const onClickHandler = () => {
+    let name = "display";
+    props.setDisplayState(prevState => ({...prevState, [name]: "Guest Registration"}))
+  }
+
   return (
-    <a href="/silkroad">GUESTLIST.VIP: SILKROAD</a>
+    <span onClick={onClickHandler}>GUEST LIST REGISTRATION</span>
   )
 }
+

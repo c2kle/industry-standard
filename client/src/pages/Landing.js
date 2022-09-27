@@ -5,7 +5,7 @@ import CopyrightFooter from '../components/CopyrightFooter'
 import Event from './Event'
 import List from './List'
 import HomeFooter from '../components/HomeFooter'
-
+import EventFooter from '../components/EventFooter'
 export default function Landing() {
 
   useEffect(() => {
@@ -13,16 +13,16 @@ export default function Landing() {
   }, []);
 
   const [displayState, setDisplayState] = useState({
-    display: "Access Code",
+    display: "Guest Registration",
     event: {
-      title: "",
-      label_1: "",
-      label_2: "",
-      label_3: "",
-      label_4: "",
-      label_5: "",
-      label_6: "",
-      label_7: "",
+      title: "SILKROAD",
+      label_1: "Event: Mixer",
+      label_2: "Venue: Down Time Chapel Hill",
+      label_3: "Date: TBA",
+      label_4: "Time: 9:00pm - 11:30pm",
+      label_5: "Cover: $5, $10 (Under 21)",
+      label_6: "DJ: DJ RUSS, TBA",
+      label_7: "Contact: silkroad@guestlist.vip",
     },
   });
 
@@ -31,7 +31,7 @@ export default function Landing() {
 
   if (displayState.display === "Event") {
     page = <Event displayState={displayState} setDisplayState={setDisplayState} />
-    footer = <HomeFooter displayState={displayState} setDisplayState={setDisplayState}/>
+    footer = <EventFooter displayState={displayState} setDisplayState={setDisplayState}/>
   }
   else if (displayState.display === "Guest Registration" || displayState.display === "Temporary Create" || displayState.display === "Temporary Channel") {
     page = <List displayState={displayState} setDisplayState={setDisplayState} />
@@ -41,6 +41,7 @@ export default function Landing() {
     page = <AccessCode setDisplayState={setDisplayState} />
     footer = <CopyrightFooter />
   }
+
 
   return (
     <div className='landingContainer'>

@@ -34,26 +34,29 @@ export default function AccessCode(props) {
     else if (results.getEvent === null) {
 
     }
-    else if (results.getEvent.code === "CHANNEL") {
-      let eventResults = results.getEvent;
-
-      populateNewState(eventResults,"Temporary Channel");
-    }
-    else if (results.getEvent.code === "CREATE") {
-
-      let eventResults = results.getEvent;
-
-      populateNewState(eventResults,"Temporary Create");
-    }
-    else if (results.getEvent !== null) {
-
-      let eventResults = results.getEvent
-
-      populateNewState(eventResults,"Event");
-    }
     else {
-      console.log(results.getEvent)
+      populateNewState(results.getEvent, "Guest Registration")
     }
+    // else if (results.getEvent.code === "CHANNEL") {
+    //   let eventResults = results.getEvent;
+
+    //   populateNewState(eventResults,"Temporary Channel");
+    // }
+    // else if (results.getEvent.code === "CREATE") {
+
+    //   let eventResults = results.getEvent;
+
+    //   populateNewState(eventResults,"Temporary Create");
+    // }
+    // else if (results.getEvent !== null) {
+
+    //   let eventResults = results.getEvent
+
+    //   populateNewState(eventResults,"Event");
+    // }
+    // else {
+    //   console.log(results.getEvent)
+    // }
 
   }
 

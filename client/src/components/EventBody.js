@@ -18,8 +18,8 @@ export default function EventBody(props) {
             <h5>{props.displayState.event.label_5}</h5>
             <h5>{props.displayState.event.label_6}</h5>
             <h5>{props.displayState.event.label_7}</h5>
-            <button className="eventRegistration" onClick={onClickHandler}>Guest List Registration</button>
-            <button className="eventRegistration" href="">Gallery (Post Event)</button>
+            {/* <button className="eventRegistration" onClick={onClickHandler}>Guest List Registration</button> */}
+            {/* <button className="eventRegistration" href="">Gallery (Post Event)</button> */}
         </div>
     )
 }
