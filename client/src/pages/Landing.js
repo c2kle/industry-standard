@@ -49,7 +49,7 @@ export default function Landing() {
         {page}
       </div>
       <footer>
-        {footer}
+        {/* {footer} */}
       </footer>
     </div>
   )
