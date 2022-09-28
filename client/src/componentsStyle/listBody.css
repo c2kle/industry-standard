@@ -33,7 +33,7 @@ form {
     color: whitesmoke;
     outline:none;
 }
-select {
+/* select {
     height: 30px;
     width: 275px;
     border-style: none none solid solid;
@@ -61,5 +61,5 @@ select:hover{
 
 select:focus{
     border-color: whitesmoke;
-}
+} */
 
