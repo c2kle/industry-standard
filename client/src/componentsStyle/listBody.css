@@ -26,4 +26,40 @@ form {
 
 .listButton {
     margin:20px;
+    font-family: 'Be Vietnam Pro','sans-serif';
 }
+
+.listButton:focus {
+    color: whitesmoke;
+    outline:none;
+}
+select {
+    height: 30px;
+    width: 275px;
+    border-style: none none solid solid;
+    border-color: rgb(118,118,118);
+    border-width: 0px 0px .5px 0px;
+    border-radius: 0px;
+    background-color: black;
+    margin: 10px;
+    color:rgb(118,118,118);
+    text-align: center;
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: small;
+    letter-spacing: 1.4px;
+    text-transform:uppercase;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    box-sizing: content-box;
+    text-align: left;
+}
+
+select:hover{
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+select:focus{
+    border-color: whitesmoke;
+}
+

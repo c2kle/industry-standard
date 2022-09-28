@@ -46,8 +46,9 @@ input {
     letter-spacing: 1.4px;
     text-transform:uppercase;
     outline: none;
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
     box-sizing: content-box;
+    text-indent: .3em;
 }
 
 input:focus {
