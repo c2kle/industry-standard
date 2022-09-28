@@ -29,18 +29,30 @@ export default function Landing() {
   let page;
   let footer;
 
-  if (displayState.display === "Event") {
-    page = <Event displayState={displayState} setDisplayState={setDisplayState} />
-    footer = <EventFooter displayState={displayState} setDisplayState={setDisplayState}/>
-  }
-  else if (displayState.display === "Guest Registration" || displayState.display === "Temporary Create" || displayState.display === "Temporary Channel") {
+  let urlParameter = window.location.href
+  let split = urlParameter.split("guestlist.vip")
+
+  if (split[1] === "/86a03b76" || split[1] === "/" || split[1] === "") {
     page = <List displayState={displayState} setDisplayState={setDisplayState} />
-    footer = <HomeFooter displayState={displayState} setDisplayState={setDisplayState} />
   }
   else {
-    page = <AccessCode setDisplayState={setDisplayState} />
-    footer = <CopyrightFooter />
+    page = <h1 style={{fontFamily: "Be Vietnam Pro"}}>ACCESS DENIED</h1>
   }
+  // if (displayState.display === "Event") {
+  //   page = <Event displayState={displayState} setDisplayState={setDisplayState} />
+  //   footer = <EventFooter displayState={displayState} setDisplayState={setDisplayState}/>
+  // }
+  // else if (displayState.display === "Guest Registration" || displayState.display === "Temporary Create" || displayState.display === "Temporary Channel") {
+  //   page = <List displayState={displayState} setDisplayState={setDisplayState} />
+  //   footer = <HomeFooter displayState={displayState} setDisplayState={setDisplayState} />
+  // }
+  // else {
+  //   page = <AccessCode setDisplayState={setDisplayState} />
+  //   footer = <CopyrightFooter />
+  // }
+
+
+
 
 
   return (
