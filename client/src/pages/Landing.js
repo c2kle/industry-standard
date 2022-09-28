@@ -4,8 +4,11 @@ import AccessCode from '../components/AccessCode'
 import CopyrightFooter from '../components/CopyrightFooter'
 import Event from './Event'
 import List from './List'
+import Login from './Login'
 import HomeFooter from '../components/HomeFooter'
 import EventFooter from '../components/EventFooter'
+
+
 export default function Landing() {
 
   useEffect(() => {
@@ -31,8 +34,10 @@ export default function Landing() {
 
   let urlParameter = window.location.href
   let split = urlParameter.split("guestlist.vip")
-
-  if (split[1] === "/86a03b76" || split[1] === "/" || split[1] === "") {
+  if (split[1] === "/" || split[1] === "") {
+    page = <Login />
+  }
+  else if (split[1] === "/86a03b76" || split[1] === "/silkroad" ) {
     page = <List displayState={displayState} setDisplayState={setDisplayState} />
   }
   else {
@@ -52,12 +57,10 @@ export default function Landing() {
   // }
 
 
-
-
-
   return (
     <div className='landingContainer'>
       <div className="landingBody">
+        {/* < Login/> */}
         {page}
       </div>
       <footer>
