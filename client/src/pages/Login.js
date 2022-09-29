@@ -13,7 +13,7 @@ const onSubmitHandler = (e) => {
 
 //THIS IS FOR DEV TESTING PURPOSES :)
 if (userName === 'SILKROAD' || password === 'ADMIN') {
-    return <img src="qr_test.png" style={{height: 100,width:100}}></img>
+    return <img src="qr-code-svg.svg" style={{height: 200,width:200}}></img>
 }
   return (
     <form  onSubmit={(e) => {e.preventDefault();onSubmitHandler(e)} }>
