@@ -10,6 +10,8 @@
     align-items: flex-start;
     box-sizing: border-box;
     width: 100vw;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .navigationMenu ul {
