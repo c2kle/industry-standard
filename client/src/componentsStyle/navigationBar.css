@@ -34,7 +34,7 @@
 
 .navBurger {
     display: none;
-    background-color: none;
+    background-color: transparent;
     position: fixed;
     bottom: 2em;
     left: 2em;
