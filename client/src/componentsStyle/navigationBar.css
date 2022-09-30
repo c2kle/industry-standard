@@ -8,6 +8,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    box-sizing: border-box;
     width: 100vw;
 }
 
@@ -46,8 +47,8 @@
 
 @media (max-width: 40em) {
     .navigationMenu[data-visible="false"] {
-        visibility: hidden;
-        transform: translateX(0%);
+        /* visibility: hidden; */
+        transform: translateX(0);
     }
     .navigationMenu {
         display: flex;
@@ -56,7 +57,7 @@
         background: black;
         position: fixed;
         width: 70vw;
-        inset: 0 0 0 (-70vw + .5px);
+        inset: 0 0 0 -70vw;
         transform: translateX(100%);
         transition: transform 75ms ease-out;
         border-style: none solid none none;

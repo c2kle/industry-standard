@@ -35,7 +35,7 @@ export default function Landing() {
   let footer;
 
   let urlParameter = window.location.href
-  let split = urlParameter.split("guestlist.vip")
+  let split = urlParameter.split("3000")
   if (split[1] === "/" || split[1] === "") {
     page = <Login />
   }
