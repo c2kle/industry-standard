@@ -5,7 +5,7 @@
 }
 
 .navigationMenu {
-    display: none;
+    display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     width: 100vw;
@@ -46,6 +46,7 @@
 
 @media (max-width: 40em) {
     .navigationMenu[data-visible="false"] {
+        visibility: hidden;
         transform: translateX(0%);
     }
     .navigationMenu {
