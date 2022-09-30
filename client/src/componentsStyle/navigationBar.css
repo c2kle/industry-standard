@@ -8,10 +8,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    box-sizing: border-box;
+    box-sizing: content-box;
     width: 100vw;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 
 .navigationMenu ul {
@@ -49,9 +47,10 @@
 
 @media (max-width: 40em) {
     .navigationMenu[data-visible="false"] {
-        /* visibility: hidden; */
-        transform: translate(0) ;
-        -webkit-transform: translate(0);
+        /* visibility: hidden;  */
+        /* transform: translate(0) ;
+        -webkit-transform: translate(0); */
+        display: none;
     }
     .navigationMenu {
         display: flex;
@@ -59,15 +58,16 @@
         align-items:center;
         background: black;
         position: fixed;
+        height: 100vh;
         width: 70vw;
-        inset: 0 0 0 -70vw;
+        /* inset: 0 0 0 -70vw;
         transform: translate(calc(70vw - .5px));
         transition: transform 75ms ease-out;
         -webkit-transform: translate(calc(70vw - .5px));
-        -webkit-transition: -webkit-transform 75ms ease-out;
+        -webkit-transition: -webkit-transform 75ms ease-out; */
         border-style: none solid none solid;
         border-width: 0px .5px 0px 0px;
-        border-color: whitesmoke;
+        border-color: rgb(118,118,118);
     }
     .navigationMenu ul {
         display: flex; 
@@ -83,8 +83,9 @@
 
 @media (orientation: landscape) and (max-width: 70em) {
     .navigationMenu[data-visible="false"] {
-        transform: translate(0);
-        -webkit-transform: translate(0);
+        /* transform: translate(0);
+        -webkit-transform: translate(0); */
+        display: none;
     }
     .navigationMenu {
         display: flex;
@@ -93,15 +94,16 @@
         background: black;
 
         position: fixed;
+        height: 100vh;
         width: 30vw;
-        inset: 0 0 0 -30vw;
+        /* inset: 0 0 0 -30vw;
         transform: translate(calc(30vw - .5px));
         transition: transform 75ms ease-out;
         -webkit-transform: translate(calc(30vw - .5px));
-        -webkit-transition: -webkit-transform 75ms ease-out;
+        -webkit-transition: -webkit-transform 75ms ease-out; */
         border-style: none solid none none;
         border-width: 0px .5px 0px 0px;
-        border-color:whitesmoke;
+        border-color: rgb(118,118,118);
     }
     .navigationMenu ul {
         display: flex; 
