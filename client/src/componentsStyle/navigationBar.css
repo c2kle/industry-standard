@@ -67,7 +67,7 @@
         -webkit-transition: -webkit-transform 75ms ease-out; */
         border-style: none solid none solid;
         border-width: 0px .5px 0px 0px;
-        border-color: rgb(118,118,118);
+        border-color: whitesmoke;
     }
     .navigationMenu ul {
         display: flex; 
@@ -103,7 +103,7 @@
         -webkit-transition: -webkit-transform 75ms ease-out; */
         border-style: none solid none none;
         border-width: 0px .5px 0px 0px;
-        border-color: rgb(118,118,118);
+        border-color: whitesmoke;
     }
     .navigationMenu ul {
         display: flex; 
