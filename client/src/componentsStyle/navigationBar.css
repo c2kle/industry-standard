@@ -5,7 +5,7 @@
 }
 
 .navigationMenu {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: flex-start;
     width: 100vw;
@@ -47,7 +47,6 @@
 @media (max-width: 40em) {
     .navigationMenu[data-visible="false"] {
         transform: translateX(0%);
-        border-width: 0px 0px 0px 0px;
     }
     .navigationMenu {
         display: flex;
@@ -78,7 +77,6 @@
 @media (orientation: landscape) and (max-width: 70em) {
     .navigationMenu[data-visible="false"] {
         transform: translateX(0%);
-        border-width: 0px 0px 0px 0px;
     }
     .navigationMenu {
         display: flex;
