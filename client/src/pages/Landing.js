@@ -7,6 +7,8 @@ import List from './List'
 import Login from './Login'
 import HomeFooter from '../components/HomeFooter'
 import EventFooter from '../components/EventFooter'
+import NavigationBar from '../components/NavigationBar'
+import NavButton from '../components/NavButton'
 
 
 export default function Landing() {
@@ -33,7 +35,7 @@ export default function Landing() {
   let footer;
 
   let urlParameter = window.location.href
-  let split = urlParameter.split("guestlist.vip")
+  let split = urlParameter.split("3000")
   if (split[1] === "/" || split[1] === "") {
     page = <Login />
   }
@@ -57,8 +59,11 @@ export default function Landing() {
   // }
 
 
+
+
   return (
     <div className='landingContainer'>
+      <NavigationBar />
       <div className="landingBody">
         {/* < Login/> */}
         {page}
@@ -66,6 +71,7 @@ export default function Landing() {
       <footer>
         {/* {footer} */}
       </footer>
+      <NavButton />
     </div>
   )
 }

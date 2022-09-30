@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navigationMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.navigationMenu ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.navigationMenu ul li {
+    margin: 10px;
+}
+
+.navigationMenu ul li span {
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    color: rgb(118,118,118);
+    letter-spacing: 1.4px;
+    margin: 10px;
+}
+
+.navBurger {
+    display: none;
+    position: fixed;
+    height: 2em;
+    width: 3em;
+    bottom: 2em;
+    left: 2em;
+}
+
+.navigationMenu ul li span:hover {
+    color:whitesmoke;
+}
+
+@media (max-width: 40em) {
+    .navigationMenu[data-visible="false"] {
+        transform: translateX(0%);
+        border-color: black;
+    }
+    .navigationMenu {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: black;
+        border-style: none solid none none;
+        border-width: 0px .5px 0px 0px;
+        border-color:whitesmoke;
+        position: fixed;
+        width: 70vw;
+        inset: 0 0 0 -70vw;
+        transform: translateX(100%);
+        transition: transform 75ms ease-out;
+    }
+    .navigationMenu ul {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .navBurger {
+        display: block;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 70em) {
+    .navigationMenu[data-visible="false"] {
+        transform: translateX(0%);
+        border-color: black;
+    }
+    .navigationMenu {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: black;
+        border-style: none solid none none;
+        border-width: 0px .5px 0px 0px;
+        border-color:whitesmoke;
+        position: fixed;
+        width: 30vw;
+        inset: 0 0 0 -30vw;
+        transform: translateX(100%);
+        transition: transform 75ms ease-out;
+    }
+    .navigationMenu ul {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .navBurger {
+        display: block;
+    }
+}
