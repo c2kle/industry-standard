@@ -56,7 +56,7 @@
         background: black;
         position: fixed;
         width: 70vw;
-        inset: 0 0 0 -70vw;
+        inset: 0 0 0 (-70vw + .5px);
         transform: translateX(100%);
         transition: transform 75ms ease-out;
         border-style: none solid none none;
