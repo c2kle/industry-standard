@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import '../pageStyles/event.css'
-import EventBody from '../components/EventBody'
-import EventTitle from '../components/EventTitle'
+import EventBody from './EventBody'
+import EventTitle from './EventTitle'
 
 export default function Event(props) {
 

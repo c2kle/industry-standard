@@ -1,41 +1,11 @@
-form {
+.login-form {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.adjust-box {
-    width:275px;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-    box-sizing: content-box;
-}
-
-button {
-    margin:0px 0px 0px 0px;
-    background-color: black;
-    border: none;
-    color: rgb(118,118,118);
-    font-size:small;
-    letter-spacing: 1.4px;
-    font-family: 'Be Vietnam Pro';
-    padding: 0px;
-    border: 0px;
-    box-sizing: content-box;
-}
-
-button:hover {
-    color:whitesmoke;
-}
-
-button:focus {
-    outline: none;
-    color: whitesmoke;
-}
-
-input {
+.login-form__input {
     height: 30px;
     width: 275px;
     border-style: none none solid none;
@@ -56,12 +26,42 @@ input {
     /* text-indent: .25em; */
 }
 
-input:focus {
+.login-form__input:focus {
     border-color: whitesmoke;
     color:whitesmoke;
 }
 
-input:hover {
+.login-form__input:hover {
     border-color: whitesmoke;
     color:whitesmoke;
+}
+
+.login-form__adjust-box {
+    width:275px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    box-sizing: content-box;
+}
+
+.login-form__adjust-box__button {
+    margin:0px 0px 0px 0px;
+    background-color: black;
+    border: none;
+    color: rgb(118,118,118);
+    font-size:x-small;
+    letter-spacing: 1.4px;
+    font-family: 'Be Vietnam Pro';
+    padding: 0px;
+    border: 0px;
+    box-sizing: content-box;
+}
+
+.login-form__adjust-box__button:hover {
+    color:whitesmoke;
+}
+
+.login-form__adjust-box__button:focus {
+    outline: none;
+    color: whitesmoke;
 }

@@ -1,5 +1,4 @@
-import Landing from './pages/Landing';
-import Login from './pages/Login';
+import CommonLayout from './pages/CommonLayout';
 import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink, from } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
 
@@ -35,7 +34,7 @@ function App() {
     <ApolloProvider client={client}>
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<Landing/>}/>
+          <Route path="*" element={<CommonLayout/>}/>
         </Routes>
       </BrowserRouter>
     </ApolloProvider>

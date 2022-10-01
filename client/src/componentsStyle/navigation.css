@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.navigationMenu {
+.nav {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -12,7 +6,7 @@
     width: 100vw;
 }
 
-.navigationMenu ul {
+.nav__ul {
     display: flex; 
     flex-direction: row;
     justify-content: center;
@@ -21,38 +15,50 @@
     padding: 0px;
 }
 
-.navigationMenu ul li {
-    margin: 10px;
-}
-
-.navigationMenu ul li span {
+.nav__ul__li {
     font-family: "Be Vietnam Pro";
     font-size: medium;
     color: rgb(118,118,118);
     letter-spacing: 1.4px;
-    margin: 10px;
+    margin: 10px 20px 10px 20px;
 }
 
-.navBurger {
+.nav__ul__li:hover {
+    color:whitesmoke;
+}
+
+.nav-button {
     display: none;
     background-color: transparent;
     position: fixed;
     bottom: 2em;
     left: 2em;
+    color: rgb(118,118,118);
+    font-size:small;
+    letter-spacing: 1.4px;
+    font-family: 'Be Vietnam Pro';
+    margin:0px;
+    padding: 0px;
+    border: 0px;
 }
 
-.navigationMenu ul li span:hover {
+.nav-button:hover {
     color:whitesmoke;
 }
 
+.nav-button:focus {
+    outline: none;
+    color: whitesmoke;
+}
+
 @media (max-width: 40em) {
-    .navigationMenu[data-visible="false"] {
+    .nav[data-visible="false"] {
         /* visibility: hidden;  */
         /* transform: translate(0) ;
         -webkit-transform: translate(0); */
         display: none;
     }
-    .navigationMenu {
+    .nav{
         display: flex;
         justify-content: center;
         align-items:center;
@@ -69,25 +75,25 @@
         border-width: 0px .5px 0px 0px;
         border-color: whitesmoke;
     }
-    .navigationMenu ul {
+    .nav__ul {
         display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
     }
-    .navBurger {
+    .nav-button {
         display: block;
     }
 }
 
 @media (orientation: landscape) and (max-width: 70em) {
-    .navigationMenu[data-visible="false"] {
+    .nav[data-visible="false"] {
         /* transform: translate(0);
         -webkit-transform: translate(0); */
         display: none;
     }
-    .navigationMenu {
+    .nav{
         display: flex;
         justify-content: center;
         align-items:center;
@@ -105,14 +111,14 @@
         border-width: 0px .5px 0px 0px;
         border-color: whitesmoke;
     }
-    .navigationMenu ul {
+    .nav__ul {
         display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
     }
-    .navBurger {
+    .nav-button {
         display: block;
     }
 }

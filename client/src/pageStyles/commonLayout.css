@@ -1,9 +1,6 @@
-.landingContainer {
+.commonLayoutContainer {
     display: grid;
     background-color: black;
-    /* background-image: url("../../public/gold-wave.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 10vh 80vh 10vh;
 }
@@ -19,7 +16,7 @@ header {
     font-size: Large;
 }
 
-.landingBody {
+.commonLayoutBody {
     grid-column: 2/3; 
     grid-row: 2/3;
     display: flex;

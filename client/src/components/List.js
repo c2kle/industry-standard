@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import "../pageStyles/list.css"
-import ListBody from '../components/ListBody';
-import CreateBody from '../components/CreateBody';
+import "../componentsStyle/list.css"
+import ListBody from './ListBody';
+import CreateBody from './CreateBody';
 
 export default function List(props) {
 
