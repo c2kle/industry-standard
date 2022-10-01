@@ -17,7 +17,7 @@ if (userName === 'SILKROAD' || password === 'ADMIN') {
 }
   return (
     <form  className="login-form" onSubmit={(e) => {e.preventDefault();onSubmitHandler(e)} }>
-    <input className="login-form__input" type="text" name="username" autoComplete="off" placeholder="Username" autoFocus></input>
+    <input className="login-form__input" type="text" name="username" autoComplete="off" placeholder="Username" ></input>
     <input className="login-form__input" type="text" name="password" autoComplete="off" placeholder="Password" ></input>
     <div className="login-form__adjust-box">
       <button className="login-form__adjust-box__button"type="submit">Remember me</button>
