@@ -9,6 +9,10 @@ import Home from '../components/Home'
 
 export default function CommonLayout() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   let bodyContent;
 
