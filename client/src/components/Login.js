@@ -19,13 +19,12 @@ if (username === 'SILKROAD' || password === 'ADMIN') {
     <form  className="login-form" onSubmit={(e) => {e.preventDefault();onSubmitHandler(e)} }>
     <input className="login-form__input" type="text" name="username" autoComplete="off" placeholder="Username"></input>
     <input className="login-form__input" type="password" name="password" autoComplete="off" placeholder="Password"></input>
-    
+    <span className="login-form__input" type="password" name="password" autoComplete="off" placeholder="Password"></span>
     <div className="login-form__adjust-box">
       <label className="login-form__adjust-box__checkbox-label"><input className="login-form__adjust-box__checkbox-label__checkbox" type="checkbox"></input><span className="login-form__adjust-box__checkbox-label__span">Remember me</span></label>
       <button className="login-form__adjust-box__button"type="submit">Forgot password?</button>
     </div>
     <button className="login-form__enter-button" type="submit">ENTER</button>
-    <div className="login-form__space-for-safari-focus"></div>
   </form>
   )
 }

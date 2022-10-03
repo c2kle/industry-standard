@@ -138,9 +138,3 @@
     outline: none;
     color: whitesmoke;
 }
-
-@media (max-width: 40em) {
-    .login-form__space-for-safari-focus {
-        height: 10vh;
-    }
-}
