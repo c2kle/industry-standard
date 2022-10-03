@@ -24,15 +24,6 @@
     padding: 0px 0px 0px 0px;
     box-sizing: content-box;
     /* text-indent: .25em; */
-    -webkit-text-security: square;
-    -moz-text-security: square;
-}
-
-.login-form__input[name="password"]{
-    color: black;
-    -webkit-text-security: square;
-    -moz-text-security: square;
-    font-size:x-small;
 }
 
 .login-form__input::placeholder {
