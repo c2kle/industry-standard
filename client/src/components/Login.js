@@ -20,7 +20,7 @@ if (userName === 'SILKROAD' || password === 'ADMIN') {
     <input className="login-form__input" type="text" name="username" autoComplete="off" placeholder="Username" ></input>
     <input className="login-form__input" type="text" name="password" autoComplete="off" placeholder="Password" ></input>
     <div className="login-form__adjust-box">
-      <button className="login-form__adjust-box__button"type="submit">Remember me</button>
+      <label className="login-form__adjust-box__checkbox-label"><input className="loging-form__adjust-box__checkbox-label__checkbox" type="checkbox"></input><span className="login-form__adjust-box__checkbox-label__span">Remember me</span></label>
       <button className="login-form__adjust-box__button"type="submit">Forgot password?</button>
     </div>
   </form>
