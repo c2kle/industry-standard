@@ -27,7 +27,7 @@
 }
 
 .login-form__input[type="password"]{
-    -webkit-text-security: circle;
+    -webkit-text-security: square;
 }
 .login-form__input::placeholder {
     /* text-transform:none; */
