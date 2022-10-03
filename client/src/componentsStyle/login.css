@@ -5,6 +5,21 @@
     justify-content: center;
     align-items: center;
 }
+
+.login-form__input-div{
+    height: 60px;
+    width: 275px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.login-form__label {
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: small;
+    letter-spacing: 1.4px;
+    color: rgb(118,118,118);
+    margin-bottom: 5px;
+}
 .login-form__input[name="space"] {
     border-color: black;
     color:black;
@@ -19,22 +34,20 @@
 .login-form__input {
     height: 30px;
     width: 275px;
-    border-style: none none solid none;
+    border-style: solid;
     border-color: black;
     border-width: 0px 0px .5px 0px;
     border-radius: 0px;
     background-color: black;
     margin-bottom: 20px;
     color:rgb(118,118,118);
-    text-align: left;
+    text-align: center;
     font-family: 'Be Vietnam Pro','sans-serif';
     font-size: medium;
     letter-spacing: 1.4px;
-    text-transform:uppercase;
     outline: none;
     padding: 0px 0px 0px 0px;
     box-sizing: content-box;
-    /* text-indent: .25em; */
 }
 
 .login-form__input::placeholder {
@@ -55,7 +68,14 @@
 }
 
 .login-form__input[name="username"], .login-form__input[name="password"] {
+    background-color: black;
     border-color: rgb(118,118,118);
+    color: rgb(118,118,118);
+    border-radius: 2px;
+    text-align: center;
+    font-size: medium;
+    text-transform: uppercase;
+    line-height: 2em;
 }
 
 .login-form__input[name="username"]:focus , .login-form__input[name="password"]:focus {
@@ -69,7 +89,7 @@
 }
 
 .login-form__adjust-box {
-    margin-top: 5px;
+    margin-top: 0px;
     width:275px;
     display:flex;
     flex-direction:row;
@@ -83,7 +103,7 @@
     background-color: black;
     border: none;
     color: rgb(118,118,118);
-    font-size:x-small;
+    font-size:medium;
     letter-spacing: 1.4px;
     font-family: 'Be Vietnam Pro';
     padding: 0px;
@@ -137,7 +157,7 @@
     margin:0px 0px 0px 3px;
     background-color: black;
     color: rgb(118,118,118);
-    font-size:x-small;
+    font-size:small;
     letter-spacing: 1.4px;
     font-family: 'Be Vietnam Pro';
     padding: 0px;
@@ -149,7 +169,7 @@
     background-color: transparent;
     color: rgb(118,118,118);
     font-family: 'Be Vietnam Pro';
-    font-size: medium;
+    font-size: small;
     letter-spacing: 1.4px;
     margin-top:40px;
 }
@@ -165,4 +185,13 @@
 
 .login-form__space-div {
     height:50px;
+    margin-top:15px;
+    color: rgb(118, 118, 118);
+    font-family: 'Be Vietnam Pro';
+    font-size: small;
+    letter-spacing: 1.4px;
+}
+
+.login-form__space-div__span:hover {
+    color:whitesmoke;
 }
