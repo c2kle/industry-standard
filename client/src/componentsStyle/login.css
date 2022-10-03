@@ -27,10 +27,6 @@
     /* text-indent: .25em; */
 }
 
-.login-form__input[name="space"] {
-    visibility: hidden;
-}
-
 .login-form__input::placeholder {
     /* text-transform:none; */
     text-align: left;
