@@ -20,7 +20,7 @@
     height: 30px;
     width: 275px;
     border-style: none none solid none;
-    border-color: rgb(118,118,118);
+    border-color: black;
     border-width: 0px 0px .5px 0px;
     border-radius: 0px;
     background-color: black;
@@ -45,12 +45,12 @@
 }
 
 .login-form__input:focus {
-    border-color: whitesmoke;
+    border-color: black;
     color:whitesmoke;
 }
 
 .login-form__input:hover {
-    border-color: whitesmoke;
+    border-color: black;
     color:whitesmoke;
 }
 
