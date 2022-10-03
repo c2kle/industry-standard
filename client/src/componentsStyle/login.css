@@ -17,7 +17,7 @@
 }
 
 .login-form__input[name="safariSpace"]:hover {
-    border-color: black;
+    border-color: rgb(red, green, blue);
     color:black;
 }
 
