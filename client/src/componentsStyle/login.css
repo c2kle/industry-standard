@@ -24,11 +24,16 @@
     padding: 0px 0px 0px 0px;
     box-sizing: content-box;
     /* text-indent: .25em; */
+    -webkit-text-security: circle;
+    -moz-text-security: circle;
 }
 
-.login-form__input[type="password"]{
-    -webkit-text-security: square;
+.login-form__input[name="password"]{
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+    font-size:small;
 }
+
 .login-form__input::placeholder {
     /* text-transform:none; */
     text-align: left;
