@@ -17,7 +17,7 @@ if (username === 'SILKROAD' || password === 'ADMIN') {
 }
   return (
     <form  className="login-form" onSubmit={(e) => {e.preventDefault();onSubmitHandler(e)} }>
-    <input className="login-form__input" type="password" name="safariSpace" autoComplete="off" disabled></input>
+    {/* <input className="login-form__input" type="password" name="safariSpace" autoComplete="off" disabled></input> */}
     <div className="login-form__input-div"><label className="login-form__label" name="username-label">Username</label>
     <input className="login-form__input" type="text" name="username" autoComplete="off"></input></div>
     <div className="login-form__input-div"><label className="login-form__label" name="username-label">Password</label>

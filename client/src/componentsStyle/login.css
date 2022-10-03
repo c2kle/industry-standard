@@ -34,7 +34,7 @@
 .login-form__input {
     height: 30px;
     width: 275px;
-    border-style: solid;
+    border-style: none none solid none;
     border-color: black;
     border-width: 0px 0px .5px 0px;
     border-radius: 0px;
@@ -71,7 +71,7 @@
     background-color: black;
     border-color: rgb(118,118,118);
     color: rgb(118,118,118);
-    border-radius: 2px;
+    border-radius: 0px;
     text-align: center;
     font-size: medium;
     text-transform: uppercase;
