@@ -11,10 +11,18 @@ const onSubmitHandler = (e) => {
     setPassword(e.target[1].value.toUpperCase())
 }
 
-const onClickFocus = (e) => {
-  e.target.scrollTop()
+const onClickFocus1 = (e) => {
+  e.target.scrollTop = 0
 }
 
+const onClickFocus2 = (e) => {
+  document.getElementById("pass").scrollTop = 0
+}
+
+const onClickFocus3 = (e) => {
+  window.scrollTo(0,0)
+  e.target.scrollTop = 0
+}
 
 //THIS IS FOR DEV TESTING PURPOSES :)
 if (username === 'SILKROAD' || password === 'ADMIN') {
@@ -22,8 +30,9 @@ if (username === 'SILKROAD' || password === 'ADMIN') {
 }
   return (
     <form  className="login-form" onSubmit={(e) => {e.preventDefault();onSubmitHandler(e)} }>
-    <input className="login-form__input" type="text" name="username" autoComplete="off" placeholder="Username" onClick={onClickFocus}></input>
-    <input className="login-form__input" type="password" name="password" autoComplete="off" placeholder="Password" onClick={onClickFocus}></input>
+    <input id="user" className="login-form__input" type="text" name="username" autoComplete="off" placeholder="Username" onClick={onClickFocus1}></input>
+    <input id="pass" className="login-form__input" type="password" name="password" autoComplete="off" placeholder="Password" onClick={onClickFocus2}></input>
+    <input id="register" className="login-form__input" type="text" name="register" autoComplete="off" placeholder="register" onClick={onClickFocus3}></input>
     <div className="login-form__adjust-box">
       <label className="login-form__adjust-box__checkbox-label"><input className="login-form__adjust-box__checkbox-label__checkbox" type="checkbox"></input><span className="login-form__adjust-box__checkbox-label__span">Remember me</span></label>
       <button className="login-form__adjust-box__button"type="submit">Forgot password?</button>
