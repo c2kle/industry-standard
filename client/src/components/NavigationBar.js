@@ -12,14 +12,14 @@ export default function NavigationBar() {
   const [menuVisibility, setMenuVisibility] = useState("false")
 
   const onLoginClick = () => {
-    navigate("/login");
     setMenuVisibility("false");
     setButtonText("MENU");
+    navigate("/login");
   }
   const onHomeClick = () => {
-    navigate("/");
     setMenuVisibility("false");
     setButtonText("MENU");
+    navigate("/");
     
   }
   return (
