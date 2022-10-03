@@ -27,9 +27,8 @@
     /* text-indent: .25em; */
 }
 
-.login-form__input[name="space"] {
-    border-color: black;
-    color: black;
+.login-form__input[name='username'] {
+    margin-top:100px;
 }
 
 .login-form__input::placeholder {
