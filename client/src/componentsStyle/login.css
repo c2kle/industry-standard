@@ -26,6 +26,9 @@
     /* text-indent: .25em; */
 }
 
+.login-form__input[type="password"]{
+    -webkit-text-security: circle;
+}
 .login-form__input::placeholder {
     /* text-transform:none; */
     text-align: left;
