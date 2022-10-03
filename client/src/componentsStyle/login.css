@@ -54,6 +54,10 @@
     color:whitesmoke;
 }
 
+.login-form__input[name="username"], .login-form__input[name="password"] {
+    border-color: rgb(118,118,118);
+}
+
 .login-form__input[name="username"]:focus , .login-form__input[name="password"]:focus {
     border-color: whitesmoke;
     color:whitesmoke;
