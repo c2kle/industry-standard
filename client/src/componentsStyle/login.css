@@ -54,6 +54,16 @@
     color:whitesmoke;
 }
 
+.login-form__input[name="username"]:focus , .login-form__input[name="password"]:focus {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+.login-form__input[name="username"]:hover, .login-form__input[name="password"]:hover {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
 .login-form__adjust-box {
     margin-top: 5px;
     width:275px;
