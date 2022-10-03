@@ -25,6 +25,7 @@ if (username === 'SILKROAD' || password === 'ADMIN') {
       <button className="login-form__adjust-box__button"type="submit">Forgot password?</button>
     </div>
     <button className="login-form__enter-button" type="submit">ENTER</button>
+    <div className="login-form__space-div"></div>
   </form>
   )
 }

@@ -162,3 +162,7 @@
     outline: none;
     color: whitesmoke;
 }
+
+.login-form__space-div {
+    height:50px;
+}
