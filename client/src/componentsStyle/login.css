@@ -5,15 +5,20 @@
     justify-content: center;
     align-items: center;
 }
-.login-form__input[name="space"] {
+.login-form__input[name="safariSpace"] {
     border-color: black;
     color:black;
 
 }
 
-.login-form__input[name="space"]::placeholder {
+.login-form__input[name="safariSpace"]::placeholder {
     color:black;
     
+}
+
+.login-form__input[name="safariSpace"]:hover {
+    border-color: black;
+    color:black;
 }
 
 .login-form__input {
