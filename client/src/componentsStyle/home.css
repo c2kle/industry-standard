@@ -12,10 +12,11 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    display: flex;
+    display: block;
 }
 
 .home-h1[name="rotate"]:before {
+    display:block;
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL";
     -webkit-animation-name: animate;
     -webkit-animation-iteration-count: infinite;
