@@ -5,6 +5,7 @@ import List from '../components/List'
 import Login from '../components/Login'
 import NavigationBar from '../components/NavigationBar'
 import Home from '../components/Home'
+import Register from '../components/Register'
 
 
 export default function CommonLayout() {
@@ -27,6 +28,9 @@ export default function CommonLayout() {
   }
   else if (path === "/login") {
     bodyContent = <Login/>
+  }
+  else if ( path === "/register") {
+    bodyContent = <Register/>
   }
 
 

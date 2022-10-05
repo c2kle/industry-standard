@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import '../componentsStyle/login.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+
+  const navigate = useNavigate();
 
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
@@ -9,6 +12,10 @@ export default function Login() {
   const onSubmitHandler = (e) => {
     setUsername(e.target[1].value.toUpperCase())
     setPassword(e.target[2].value.toUpperCase())
+  }
+
+  const onRegisterHandler = (e) => {
+    navigate("/register")
   }
 
   //THIS IS FOR DEV TESTING PURPOSES :)
@@ -28,7 +35,7 @@ export default function Login() {
         <label className="login-form__adjust-box__checkbox-label"><input className="login-form__adjust-box__checkbox-label__checkbox" type="checkbox"></input><span className="login-form__adjust-box__checkbox-label__span">Remember me</span></label>
         <button className="login-form__adjust-box__button" type="submit">SIGN IN</button>
       </div>
-      <div className="login-form__space-div"><span className="login-form__space-div__span" name="register">Register</span><span className="login-form__space-div__span" name="seperator"> | </span><span className="login-form__space-div__span" name="forgot-password">Forgot password?</span></div>
+      <div className="login-form__space-div"><span className="login-form__space-div__span" name="register" onClick={onRegisterHandler}>Register</span><span className="login-form__space-div__span" name="seperator"> | </span><span className="login-form__space-div__span" name="forgot-password">Forgot password?</span></div>
     </form>
   )
 }
