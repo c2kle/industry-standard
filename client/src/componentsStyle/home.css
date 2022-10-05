@@ -18,9 +18,30 @@
 .home-h1[name="rotate"]:before {
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL";
     animation: animate infinite 8s;
+    -moz-animation: animate infinite 8s;
+    -webkit-animation: animate infinite 8s;
+
 }
 
 @keyframes animate{
+    0%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
+    }
+    20%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EXCLUSIVE"
+    }
+    40%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 CUSTOM"
+    }
+    60% {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 TAILORED"
+    }
+    80%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 VIP"
+    }
+}
+
+@-webkit-keyframes animate {
     0%{
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
     }
