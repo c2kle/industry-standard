@@ -18,6 +18,10 @@ export default function Login() {
     navigate("/register")
   }
 
+  const onFpHandler = (e) => {
+    navigate("/forgot-password")
+  }
+
   //THIS IS FOR DEV TESTING PURPOSES :)
   if (username === 'SILKROAD' || password === 'ADMIN') {
     return <img src="qr-code-svg.svg" style={{ height: 200, width: 200 }}></img>
@@ -35,7 +39,7 @@ export default function Login() {
         <label className="login-form__adjust-box__checkbox-label"><input className="login-form__adjust-box__checkbox-label__checkbox" type="checkbox"></input><span className="login-form__adjust-box__checkbox-label__span">Remember me</span></label>
         <button className="login-form__adjust-box__button" type="submit">SIGN IN</button>
       </div>
-      <div className="login-form__space-div"><span className="login-form__space-div__span" name="register" onClick={onRegisterHandler}>Register</span><span className="login-form__space-div__span" name="seperator"> | </span><span className="login-form__space-div__span" name="forgot-password">Forgot password?</span></div>
+      <div className="login-form__space-div"><span className="login-form__space-div__span" name="register" onClick={onRegisterHandler}>Register</span><span className="login-form__space-div__span" name="seperator"> | </span><span className="login-form__space-div__span" name="forgot-password" onClick={onFpHandler}>Forgot password?</span></div>
     </form>
   )
 }

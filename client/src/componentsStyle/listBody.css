@@ -1,4 +1,4 @@
-/* h3 {
+h3 {
     margin-bottom: 18%;
 }
 
@@ -32,8 +32,8 @@ form {
 .listButton:focus {
     color: whitesmoke;
     outline:none;
-} */
-/* select {
+} 
+select {
     height: 30px;
     width: 275px;
     border-style: none none solid solid;
@@ -61,5 +61,5 @@ select:hover{
 
 select:focus{
     border-color: whitesmoke;
-} */
+}
 

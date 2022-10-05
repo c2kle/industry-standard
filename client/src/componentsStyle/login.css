@@ -45,7 +45,7 @@
 .login-form__input-div__input[name="username"], .login-form__input-div__input[name="password"] {
     border-color: rgb(118,118,118);
     color: rgb(118,118,118);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: 2em;
 }
 
