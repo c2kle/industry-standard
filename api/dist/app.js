@@ -38,6 +38,7 @@ const cors_1 = __importDefault(require("cors"));
 const typeorm_1 = require("typeorm");
 const Guests_1 = require("./Entities/Guests");
 const Events_1 = require("./Entities/Events");
+const Users_1 = require("./Entities/Users");
 const dotenv = __importStar(require("dotenv"));
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     dotenv.config();
@@ -50,7 +51,7 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
         password: process.env.DB_PASSWORD,
         logging: true,
         synchronize: false,
-        entities: [Guests_1.Guests, Events_1.Events],
+        entities: [Guests_1.Guests, Events_1.Events, Users_1.Users],
     });
     const connection = yield dataSource.initialize()
         .then(() => {
@@ -62,10 +63,13 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
     const app = (0, express_1.default)();
     app.use((0, cors_1.default)());
     app.use(express_1.default.json());
-    app.use("/graphql", (0, express_graphql_1.graphqlHTTP)({
-        schema: Schema_1.schema,
-        graphiql: true
-    }));
+    app.use("/graphql", (req, res) => {
+        return (0, express_graphql_1.graphqlHTTP)({
+            schema: Schema_1.schema,
+            graphiql: true,
+            context: { req, res }
+        })(req, res);
+    });
     app.listen(process.env.PORT, () => {
         console.log(`SERVER RUNNING ON PORT ${process.env.PORT}`);
     });

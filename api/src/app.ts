@@ -5,6 +5,7 @@ import cors from "cors";
 import { DataSource } from "typeorm";
 import { Guests } from "./Entities/Guests";
 import { Events } from "./Entities/Events";
+import { Users } from "./Entities/Users";
 import * as dotenv from 'dotenv'
 
 const main = async () => {
@@ -20,7 +21,7 @@ const main = async () => {
         password: process.env.DB_PASSWORD,
         logging: true,
         synchronize: false,
-        entities: [Guests, Events],
+        entities: [Guests, Events, Users],
     });
 
     const connection = await dataSource.initialize()
@@ -34,10 +35,13 @@ const main = async () => {
     const app = express()
     app.use(cors())
     app.use(express.json())
-    app.use("/graphql",graphqlHTTP({
-        schema,
-        graphiql: true
-    }))
+    app.use("/graphql", (req,res) => {
+        return graphqlHTTP({
+            schema,
+            graphiql: true,
+            context: {req,res}
+        })(req,res);
+    })
 
     app.listen(process.env.PORT, () => {
         console.log(`SERVER RUNNING ON PORT ${process.env.PORT}`)
