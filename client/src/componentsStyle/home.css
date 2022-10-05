@@ -11,7 +11,7 @@
 .home-h1 {
     color: whitesmoke;
     font-family: "Be Vietnam Pro";
-    font-size: 4vw;
+    font-size: 3.5vw;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -22,12 +22,12 @@
 
 @media (max-width: 70em) {
     .home-h1 {
-        font-size: 7.5vw;
+        font-size: 7vw;
     }
 }
 
 @media (orientation: landscape) and (max-width: 80em) {
     .home-h1 {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 }
