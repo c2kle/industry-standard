@@ -17,9 +17,25 @@
 
 .home-h1[name="rotate"]:before {
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL";
-    animation: animate infinite 8s;
-    -moz-animation: animate infinite 8s;
-    -webkit-animation: animate infinite 8s;
+    -webkit-animation-name: animate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -moz-animation-name: animate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 8s;
+    -o-animation-name: animate;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 8s;
+    -ms-animation-name: animate;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-duration: 8s;
+    -webkit-animation-name: animate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+
 
 }
 
@@ -42,6 +58,60 @@
 }
 
 @-webkit-keyframes animate {
+    0%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
+    }
+    20%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EXCLUSIVE"
+    }
+    40%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 CUSTOM"
+    }
+    60% {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 TAILORED"
+    }
+    80%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 VIP"
+    }
+}
+
+@-moz-keyframes animate {
+    0%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
+    }
+    20%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EXCLUSIVE"
+    }
+    40%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 CUSTOM"
+    }
+    60% {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 TAILORED"
+    }
+    80%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 VIP"
+    }
+}
+
+@-o-keyframes animate {
+    0%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
+    }
+    20%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EXCLUSIVE"
+    }
+    40%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 CUSTOM"
+    }
+    60% {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 TAILORED"
+    }
+    80%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 VIP"
+    }
+}
+
+@-ms-keyframes animate {
     0%{
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
     }
