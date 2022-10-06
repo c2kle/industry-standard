@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-div">
       <h1 className="home-h1-animate"></h1>
       <h1 className="home-h1">INVITATIONS</h1>
-      <h1 className="home-h1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GUEST LIST</h1>
+      <h1 className="home-h1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GUEST LIST</h1>
       <h1 className="home-h1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RSVP</h1>
     </div>
   )

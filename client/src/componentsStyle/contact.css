@@ -1,0 +1,114 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 20px;
+
+}
+
+.contact-form__input-div{
+    height: 60px;
+    width: 275px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form__input-div__label {
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+    color: rgb(118,118,118);
+    margin-bottom: 5px;
+}
+
+.contact-form__input-div__input {
+    height: 30px;
+    width: 275px;
+    border-style: none none solid none;
+    border-color: rgb(118,118,118);
+    border-width: 0px 0px .5px 0px;
+    border-radius: 0px;
+    background-color: black;
+    margin-bottom: 20px;
+    color:rgb(118,118,118);
+    text-align: center;
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+    line-height: 2em;
+    /* text-transform: uppercase; */
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    box-sizing: content-box;
+}
+
+.contact-form__input-div__input:focus {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+.contact-form__input-div__input:hover {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+.contact-form__textarea-div{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form__input-div__textarea {
+    display: block;
+    border-style: solid;
+    border-color: rgb(118,118,118);
+    border-width: .5px .5px .5px .5px;
+    border-radius: 0px;
+    background-color: black;
+    margin: 20px 0px 20px 0px;
+    color:rgb(118,118,118);
+    font-family: 'Be Vietnam Pro','sans-serif';
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: content-box;
+    resize: none; 
+    width: 275px;
+    height: 275px;
+    box-sizing: border-box;
+
+}
+
+.contact-form__input-div__textarea:hover {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+
+.contact-form__input-div__textarea:focus {
+    border-color: whitesmoke;
+    color:whitesmoke;
+}
+.contact-form__submit-button {
+    background-color: transparent;
+    color: rgb(118,118,118);
+    font-family: "Be Vietnam Pro";
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1.4px;
+    margin-top: 10px;
+}
+
+.contact-form__submit-button:hover {
+    color: whitesmoke;
+}
+
+.contact-form__submit-button:focus {
+    color:whitesmoke;
+    outline: none;
+}

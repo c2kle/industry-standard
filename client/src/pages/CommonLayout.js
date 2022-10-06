@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import '../pageStyles/commonLayout.css'
 import ListBody from '../components/ListBody'
@@ -37,7 +37,7 @@ export default function CommonLayout() {
   else if (path ==="/forgot-password") {
     bodyContent = <ForgotPassword/>
   }
-  else if (path ---"/contact-us") {
+  else if (path ==="/contact-us") {
     bodyContent = <Contact/>
   }
 
