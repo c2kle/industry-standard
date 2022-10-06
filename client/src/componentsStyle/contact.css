@@ -63,10 +63,11 @@
 }
 
 .contact-form__input-div__textarea {
+    appearance: none;
     display: block;
     border-style: solid;
     border-color: rgb(118,118,118);
-    border-width: .75px .75px .75px .75px;
+    border-width: .5px .5px .5px .5px;
     border-radius: 0px;
     background-color: black;
     margin: 20px 0px 20px 0px;
@@ -76,7 +77,7 @@
     font-weight: 200;
     letter-spacing: 1.4px;
     outline: none;
-    padding: 8;
+    padding: 8px;
     resize: none; 
     width: 275px;
     height: 275px;
