@@ -67,7 +67,7 @@
     display: block;
     border-style: solid;
     border-color: rgb(118,118,118);
-    border-width: .5px .5px .5px .5px;
+    border-width: 1px .5px .5px .5px;
     border-radius: 0px;
     background-color: black;
     margin: 20px 0px 20px 0px;
