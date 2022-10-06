@@ -6,7 +6,7 @@
 .home-h1 {
     color: whitesmoke;
     font-family: "Be Vietnam Pro";
-    font-size: 2em;
+    font-size: 32px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -14,12 +14,17 @@
     -ms-user-select: none;
     user-select: none;
     display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .home-h1-animate {
     color: whitesmoke;
     font-family: "Be Vietnam Pro";
-    font-size: 2em;
+    font-size: 32px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -27,6 +32,11 @@
     -ms-user-select: none;
     user-select: none;
     display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .home-h1-animate::before {
