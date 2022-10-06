@@ -66,7 +66,10 @@
     display: block;
     border-style: solid;
     border-color: rgb(118,118,118);
-    border-width: .5px .5px .5px .5px;
+    border-top-width: .5px;
+    border-right-width: .5px;
+    border-bottom-width: .5px;
+    border-left-width: .5px;
     border-radius: 0px;
     background-color: black;
     margin: 20px 0px 20px 0px;
@@ -76,8 +79,7 @@
     font-weight: 200;
     letter-spacing: 1.4px;
     outline: none;
-    padding: 7.5px;
-    box-sizing: content-box;
+    padding: 8;
     resize: none; 
     width: 275px;
     height: 275px;
