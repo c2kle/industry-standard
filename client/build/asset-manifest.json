@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.0e10fb32.css",
+    "main.css": "./static/css/main.eefbeac6.css",
     "main.js": "./static/js/main.1f479a2a.js",
     "static/media/BeVietnamPro-ExtraLight.ttf": "./static/media/BeVietnamPro-ExtraLight.ff2c3cd9b5ebc63b2668.ttf",
     "index.html": "./index.html",
-    "main.0e10fb32.css.map": "./static/css/main.0e10fb32.css.map",
+    "main.eefbeac6.css.map": "./static/css/main.eefbeac6.css.map",
     "main.1f479a2a.js.map": "./static/js/main.1f479a2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e10fb32.css",
+    "static/css/main.eefbeac6.css",
     "static/js/main.1f479a2a.js"
   ]
 }
