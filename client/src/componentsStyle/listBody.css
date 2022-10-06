@@ -22,11 +22,13 @@ form {
     text-align: left;
     font-family: 'Be Vietnam Pro';
     font-size: small;
+    font-weight: 200;
 }
 
 .listButton {
     margin:20px;
     font-family: 'Be Vietnam Pro','sans-serif';
+    font-weight: 200;
 }
 
 .listButton:focus {
