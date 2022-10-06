@@ -22,12 +22,17 @@ export default function NavigationBar() {
     navigate("/");
     
   }
+  const onContactClick = () => {
+    setMenuVisibility("false");
+    setButtonText("MENU");
+    navigate("/contact-us");
+  }
   return (
     <><nav className="nav" data-visible={menuVisibility}>
       <ul className="nav__ul">
         <li className="nav__ul__li" onClick={onHomeClick}>Home</li>
         <li className="nav__ul__li">About</li>
-        <li className="nav__ul__li">Contact</li>
+        <li className="nav__ul__li" onClick={onContactClick}>Contact</li>
         <li className="nav__ul__li" onClick={onLoginClick}>Login</li>
       </ul>
     </nav><NavButton buttonText={buttonText} setButtonText={setButtonText} setMenuVisibility={setMenuVisibility}/></>

@@ -7,6 +7,7 @@ import NavigationBar from '../components/NavigationBar'
 import Home from '../components/Home'
 import Register from '../components/Register'
 import ForgotPassword from '../components/ForgotPassword'
+import Contact from '../components/Contact'
 
 
 export default function CommonLayout() {
@@ -35,6 +36,9 @@ export default function CommonLayout() {
   }
   else if (path ==="/forgot-password") {
     bodyContent = <ForgotPassword/>
+  }
+  else if (path ---"/contact-us") {
+    bodyContent = <Contact/>
   }
 
 

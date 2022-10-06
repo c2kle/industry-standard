@@ -15,7 +15,7 @@
     display: block;
 }
 
-.home-h1-animate::before {
+.home-h1-animate {
     color: whitesmoke;
     font-family: "Be Vietnam Pro";
     -webkit-touch-callout: none;
@@ -25,6 +25,9 @@
     -ms-user-select: none;
     user-select: none;
     display: block;
+}
+
+.home-h1-animate::before {
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL";
     -webkit-animation-name: animate;
     -webkit-animation-iteration-count: infinite;
