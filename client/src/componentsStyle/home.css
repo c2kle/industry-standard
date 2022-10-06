@@ -15,8 +15,16 @@
     display: block;
 }
 
-.home-h1[name="rotate"]::before {
-    display:block;
+.home-h1-animate::before {
+    color: whitesmoke;
+    font-family: "Be Vietnam Pro";
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL";
     -webkit-animation-name: animate;
     -webkit-animation-iteration-count: infinite;
@@ -30,9 +38,6 @@
     -ms-animation-name: animate;
     -ms-animation-iteration-count: infinite;
     -ms-animation-duration: 8s;
-    -webkit-animation-name: animate;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 8s;
     animation-name: animate;
     animation-iteration-count: infinite;
     animation-duration: 8s;
@@ -45,26 +50,8 @@
 
 }
 
-@keyframes animate{
-    0%{
-        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
-    }
-    20%{
-        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EXCLUSIVE"
-    }
-    40%{
-        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 CUSTOM"
-    }
-    60% {
-        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 TAILORED"
-    }
-    80%{
-        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 VIP"
-    }
-}
-
 @-webkit-keyframes animate {
-    0%{
+    0%, 100%{
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
     }
     20%{
@@ -82,7 +69,7 @@
 }
 
 @-moz-keyframes animate {
-    0%{
+    0%, 100%{
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
     }
     20%{
@@ -100,7 +87,7 @@
 }
 
 @-o-keyframes animate {
-    0%{
+    0%, 100%{
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
     }
     20%{
@@ -118,7 +105,26 @@
 }
 
 @-ms-keyframes animate {
-    0%{
+    0%, 100%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
+    }
+    20%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 EXCLUSIVE"
+    }
+    40%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 CUSTOM"
+    }
+    60% {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 TAILORED"
+    }
+    80%{
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 VIP"
+    }
+}
+
+
+@keyframes animate{
+    0%, 100%{
         content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL"
     }
     20%{
