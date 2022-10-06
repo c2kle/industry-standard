@@ -10,7 +10,7 @@ export default function About() {
         RSVP management
             - logic-sensitive expiration
             - custom form building
-            
+            <a href='/'>&copy; 2022 GUESTLIST.VIP - All Rights Reserved</a>
     </div>
   )
 }

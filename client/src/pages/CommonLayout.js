@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import '../pageStyles/commonLayout.css'
-import ListBody from '../components/ListBody'
+import Guest from '../components/Guest'
 import Login from '../components/Login'
 import NavigationBar from '../components/NavigationBar'
 import Home from '../components/Home'
@@ -26,7 +26,7 @@ export default function CommonLayout() {
     bodyContent = <Home />
   }
   else if (path === "/86a03b76" || path === "/silkroad" ) {
-    bodyContent = <ListBody />
+    bodyContent = <Guest />
   }
   else if (path === "/login") {
     bodyContent = <Login/>
