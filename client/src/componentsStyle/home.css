@@ -15,7 +15,7 @@
     display: block;
 }
 
-.home-h1[name="rotate"]:before {
+.home-h1[name="rotate"]::before {
     display:block;
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 DIGITAL";
     -webkit-animation-name: animate;
