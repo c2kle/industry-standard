@@ -1,0 +1,13 @@
+.about-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.trademark {
+    font-family: "Be Vietnam Pro";
+    font-weight: 200;
+    color: rgb(118,118,118);
+    margin: 20px;
+}

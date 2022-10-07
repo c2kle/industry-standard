@@ -27,11 +27,17 @@ export default function NavigationBar() {
     setButtonText("MENU");
     navigate("/contact-us");
   }
+
+  const onAboutClick = () => {
+    setMenuVisibility("false");
+    setButtonText("MENU");
+    navigate("/about");
+  }
   return (
     <><nav className="nav" data-visible={menuVisibility}>
       <ul className="nav__ul">
         <li className="nav__ul__li" onClick={onHomeClick}>Home</li>
-        <li className="nav__ul__li">About</li>
+        <li className="nav__ul__li" onClick={onAboutClick}>About</li>
         <li className="nav__ul__li" onClick={onContactClick}>Contact</li>
         <li className="nav__ul__li" onClick={onLoginClick}>Login</li>
       </ul>

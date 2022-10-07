@@ -12,6 +12,9 @@ export default function Login() {
   const onSubmitHandler = (e) => {
     setUsername(e.target[1].value.toUpperCase())
     setPassword(e.target[2].value.toUpperCase())
+    if (username === 'SILKROAD' || password === 'ADMIN') {
+      navigate("/dashboard")
+    }
   }
 
   const onRegisterHandler = (e) => {
@@ -22,10 +25,6 @@ export default function Login() {
     navigate("/forgot-password")
   }
 
-  //THIS IS FOR DEV TESTING PURPOSES :)
-  if (username === 'SILKROAD' || password === 'ADMIN') {
-    return <img src="qr-code-svg.svg" style={{ height: 200, width: 200 }}></img>
-  }
   return (
     <form className="login-form" onSubmit={(e) => { e.preventDefault(); onSubmitHandler(e) }}>
       <input className="login-form__input-div__input" type="password" name="safari-space" autoComplete="off" disabled></input>

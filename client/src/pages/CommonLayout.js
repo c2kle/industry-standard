@@ -8,7 +8,9 @@ import Home from '../components/Home'
 import Register from '../components/Register'
 import ForgotPassword from '../components/ForgotPassword'
 import Contact from '../components/Contact'
-
+import UserDash from '../components/UserDash'
+import About from '../components/About'
+import UserEvents from '../components/UserEvents'
 
 export default function CommonLayout() {
 
@@ -40,7 +42,15 @@ export default function CommonLayout() {
   else if (path ==="/contact-us") {
     bodyContent = <Contact/>
   }
-
+  else if ( path === "/dashboard") {
+    bodyContent = <UserDash/>
+  }
+  else if (path === "/about") {
+    bodyContent = <About/>
+  }
+  else if (path === "/user-events") {
+    bodyContent = <UserEvents/>
+  }
 
 
 
