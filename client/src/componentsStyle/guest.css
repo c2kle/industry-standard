@@ -1,9 +1,28 @@
+.event-sign-up-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flyer-front{
+    margin-bottom: 10px;
+}
+
+.flyer-back{
+    margin-bottom: 20px;;
+}
+
+.guest-list-title {
+    font-family: "Be Vietnam Pro";
+    margin-bottom: 20px;
+}
 .guest-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
+    margin-bottom: 20px;
 }
 
 .guest-form__h3 {

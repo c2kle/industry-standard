@@ -11,6 +11,7 @@ import Contact from '../components/Contact'
 import UserDash from '../components/UserDash'
 import About from '../components/About'
 import UserEvents from '../components/UserEvents'
+import UserEventPage from '../components/UserEventPage'
 
 export default function CommonLayout() {
 
@@ -27,7 +28,7 @@ export default function CommonLayout() {
   if (path === "/" || path === "") {
     bodyContent = <Home />
   }
-  else if (path === "/86a03b76" || path === "/silkroad" ) {
+  else if (path === "/86a03b76" || path === "/acp" ) {
     bodyContent = <Guest />
   }
   else if (path === "/login") {
@@ -50,6 +51,9 @@ export default function CommonLayout() {
   }
   else if (path === "/user-events") {
     bodyContent = <UserEvents/>
+  }
+  else if (path === "/user-event-page") {
+    bodyContent = <UserEventPage/>
   }
 
 

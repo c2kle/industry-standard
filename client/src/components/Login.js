@@ -6,13 +6,11 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
+  // const [username, setUsername] = useState("")
+  // const [password, setPassword] = useState("")
 
   const onSubmitHandler = (e) => {
-    setUsername(e.target[1].value.toUpperCase())
-    setPassword(e.target[2].value.toUpperCase())
-    if (username === 'SILKROAD' || password === 'ADMIN') {
+    if (e.target[1].value.toUpperCase() || e.target[2].value.toUpperCase()) {
       navigate("/dashboard")
     }
   }
@@ -26,7 +24,7 @@ export default function Login() {
   }
 
   return (
-    <form className="login-form" onSubmit={(e) => { e.preventDefault(); onSubmitHandler(e) }}>
+    <form className="login-form" onSubmit={(e) => {e.preventDefault();onSubmitHandler(e);console.log('ran',e.target) }}>
       <input className="login-form__input-div__input" type="password" name="safari-space" autoComplete="off" disabled></input>
       <div className="login-form__input-div">
         <label className="login-form__input-div__label" name="username-label">Username</label>
